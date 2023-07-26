@@ -179,8 +179,101 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="container mx-auto">
+        <!-- Deal of the day section -->
+        <section class="lg:mt-64 md:mt-16 mt-12">
+            <div
+                class="flex justify-between lg:flex-row md:flex-row flex-col lg:text-start md:text-start text-center lg:px-0 md:px-0 px-4 items-center">
+                <div>
+                    <h2 class="md:text-4xl text-3xl font-bold">Deal of the day</h2>
+                    <p class="text-base font-normal text-[#12121299] lg:w-[615px] lg:mt-5 md:mt-5 mt-3 md:px-0 px-6">
+                        Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                        Latin
+                        literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
+                <div class="flex md:gap-5 gap-4 md:mt-0 mt-5">
+                    <div>
+                        <span class="countdown font-bold md:text-6xl text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        days
+                    </div>
+                    <div>
+                        <span class="countdown font-bold md:text-6xl text-5xl">
+                            <span style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <div>
+                        <span class="countdown font-bold md:text-6xl text-5xl">
+                            <span style="--value:24;"></span>
+                        </span>
+                        min
+                    </div>
+                    <div>
+                        <span class="countdown font-bold md:text-6xl text-5xl">
+                            <span style="--value:36;"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- shope card section -->
+        <section class="mt-12">
+            <div>
 
+                <div class="card shadow-xl">
+                    <figure class="px-4 pt-4">
+                        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-[#121212] text-2xl">12.90$ - 18.85$ </h2>
+                        <div class="border-b-2 border-[#1212121A] w-60 mx-auto"></div>
+                        <p class="text-[#1212129A] text-base font-medium md:mt-6 mt-4">Apples</p>
+                        <div class="rating md:mt-5 mt-4 ">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                        <div class="">
+                           
+                            <button class="btn bg-white text-primary-color font-bold" onclick="my_modal_5.showModal()">Details</button>
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <form method="dialog" class="modal-box">
+
+                                    <div class="flex justify-center">
+                                        <img src="./images/fruit6.png" alt="">
+                                    </div>
+
+                                    <h3 class="font-bold text-3xl md:mt-6 mt-4">Apples</h3>
+                                    <p class="py-4 lg:w-[415px] md:w-[350px] mx-auto">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                    
+                                    <div class="modal-action flex justify-center md:gap-8 gap-4">
+                                       
+                                        <button class="btn btn-outline btn-error">close</button>
+                                        <button class="btn bg-primary-color text-white">Buy Now</button> 
+                                    </div>
+                                </form>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
     </main>
     <footer>
 
